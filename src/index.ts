@@ -17,7 +17,9 @@ app.post("/", async (req, res) => {
     await client.user.create({
         data: {
             email: req.body.email,
-            name: req.body.name
+            name: req.body.name,
+            password:req.body.password
+
         }
     })
 
